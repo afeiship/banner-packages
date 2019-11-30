@@ -8,7 +8,7 @@ npm install -D afeiship/gulp-banner
 
 ## usage
 ```js
-  "use strict";
+"use strict";
 
 var gulp = require("gulp");
 var $ = require("gulp-load-plugins")({
