@@ -1,0 +1,12 @@
+{
+  "name": "gulp-banner",
+  "version": "1.0.0",
+  "description": "Gulp banner plugin.",
+  "homepage": "https://github.com/afeiship",
+  "author": {
+    "name": "afeiship",
+    "email": "1290657123@qq.com"
+  },
+  "main": "dist/index.js",
+  "license": "MIT"
+}
