@@ -9,7 +9,7 @@ function Plugin(inString) {
   if (!inString) {
     throw new PluginError(PLUGIN_NAME, 'Missing banner text!');
   }
-  var buf = new Buffer(inString);
+  var buf = Buffer.from(inString);
   return through.obj(function(file, enc, cb) {
     if (file.isNull()) {
       cb(null, file);

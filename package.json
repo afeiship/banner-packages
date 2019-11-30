@@ -7,10 +7,16 @@
     "name": "afeiship",
     "email": "1290657123@qq.com"
   },
+  "scripts": {
+    "test": "mocha __tests__/test.js"
+  },
   "main": "dist/index.js",
   "license": "MIT",
   "devDependencies": {
+    "assert": "^2.0.0",
+    "event-stream": "^4.0.1",
     "gulp-util": "^3.0.8",
+    "mocha": "^6.2.2",
     "through2": "^3.0.1"
   }
 }

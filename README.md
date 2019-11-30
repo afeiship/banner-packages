@@ -27,3 +27,6 @@ gulp.task("default", gulp.series(["banner"]));
 
 ## resources
 - https://github.com/douglasduteil/gulp-header
+- https://github.com/ben-eb/gulp-cat/blob/master/package.json
+- https://github.com/gulpjs/gulp/blob/master/docs/writing-a-plugin/testing.md
+- https://stackoverflow.com/questions/52165333/deprecationwarning-buffer-is-deprecated-due-to-security-and-usability-issues/52165509
