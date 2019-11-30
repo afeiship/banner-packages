@@ -8,5 +8,9 @@
     "email": "1290657123@qq.com"
   },
   "main": "dist/index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "gulp-util": "^3.0.8",
+    "through2": "^3.0.1"
+  }
 }
