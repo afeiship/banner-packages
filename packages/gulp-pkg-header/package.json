@@ -1,0 +1,48 @@
+{
+  "name": "@jswork/gulp-pkg-header",
+  "version": "1.0.4",
+  "description": "Gulp header form package.json.",
+  "homepage": "https://github.com/afeiship/gulp-pkg-header",
+  "author": {
+    "name": "afei",
+    "email": "1290657123@qq.com"
+  },
+  "scripts": {
+    "build": "gulp",
+    "test": "jest",
+    "release": "release-it"
+  },
+  "main": "dist/index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-load-plugins": "^2.0.3",
+    "gulp-rename": "^2.0.0",
+    "gulp-size": "^3.0.0",
+    "gulp-uglify": "^3.0.2",
+    "jest": "^25.3.0",
+    "release-it": "^14.2.1",
+    "uglify-save-license": "^0.4.1"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "dependencies": {
+    "@jswork/next": "^1.0.0",
+    "@jswork/next-nice-comments": "^1.0.1",
+    "dateformat": "^3.0.3",
+    "gulp-header": "^2.0.9"
+  },
+  "keywords": [
+    "gulp",
+    "pkg",
+    "header",
+    "comment",
+    "plugin",
+    "banner",
+    "package",
+    "package-json"
+  ]
+}

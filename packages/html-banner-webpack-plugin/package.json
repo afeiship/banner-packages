@@ -1,0 +1,31 @@
+{
+  "name": "@jswork/html-banner-webpack-plugin",
+  "version": "1.0.0",
+  "description": "Adds a banner to the top of each generated html.",
+  "main": "index.js",
+  "repository": "git@github.com:afeiship/html-banner-webpack-plugin.git",
+  "author": "feizheng <1290657123@qq.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@jswork/next": "^1.0.5",
+    "@jswork/next-nice-comments": "^1.0.3",
+    "@jswork/next-npm-installed": "^1.0.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "devDependencies": {
+    "prettier": "^1.19.1",
+    "release-it": "^14.4.1"
+  },
+  "scripts": {
+    "release": "release-it"
+  },
+  "keywords": [
+    "webpack",
+    "plugin",
+    "html",
+    "banner"
+  ]
+}
