@@ -1,22 +1,26 @@
 {
-  "name": "gulp-banner",
-  "version": "1.0.0",
-  "description": "Gulp banner plugin.",
-  "homepage": "https://github.com/afeiship",
-  "author": {
-    "name": "afeiship",
-    "email": "1290657123@qq.com"
+  "name": "banner-packages",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "devDependencies": {
+    "lerna": "^3.22.1"
   },
   "scripts": {
-    "test": "mocha __tests__/test.js"
+    "start": "yarn --cwd packages/websites start",
+    "lerna:clean": "lerna clean",
+    "lerna:list": "lerna list",
+    "lerna:bootstrap": "lerna bootstrap",
+    "build": "lerna run build --since master --no-private",
+    "build:all": "lerna run build",
+    "publish": "npm run build && lerna publish --no-private"
   },
-  "main": "dist/index.js",
-  "license": "MIT",
-  "devDependencies": {
-    "assert": "^2.0.0",
-    "event-stream": "^4.0.1",
-    "gulp-util": "^3.0.8",
-    "mocha": "^6.2.2",
-    "through2": "^3.0.1"
+  "homepage": "https://js.work",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/afeiship/banner-packages.git"
   }
 }
