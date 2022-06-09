@@ -1,6 +1,5 @@
 import path from 'path';
 import dateformat from 'dateformat';
-
 const DEFAULT_FORMAT = 'yyyy-mm-dd HH:MM:ss';
 
 export default (inPkg?): string[] => {
