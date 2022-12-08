@@ -15,7 +15,6 @@
   "main": "dist/index.js",
   "license": "MIT",
   "devDependencies": {
-    "@jswork/gulp-pkg-header": "^1.0.6",
     "@jswork/next": "^1.0.0",
     "del": "^6.0.0",
     "express": "^4.17.1",
@@ -48,5 +47,6 @@
     "html",
     "css",
     "raw"
-  ]
+  ],
+  "gitHead": "4397e9ac060b735b606669c4eeac3d8bf0776264"
 }
