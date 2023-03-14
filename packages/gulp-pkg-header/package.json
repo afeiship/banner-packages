@@ -22,7 +22,6 @@
     "gulp-size": "^3.0.0",
     "gulp-uglify": "^3.0.2",
     "jest": "^25.3.0",
-    "release-it": "^14.2.1",
     "uglify-save-license": "^0.4.1"
   },
   "publishConfig": {

@@ -16,11 +16,7 @@
     "registry": "https://registry.npmjs.org/"
   },
   "devDependencies": {
-    "prettier": "^1.19.1",
-    "release-it": "^14.4.1"
-  },
-  "scripts": {
-    "release": "release-it"
+    "prettier": "^2.7.1"
   },
   "keywords": [
     "webpack",
