@@ -2,6 +2,13 @@ import path from 'path';
 import dateformat from 'dateformat';
 
 const DEFAULT_FORMAT = 'yyyy-mm-dd HH:MM:ss';
+const getEast8Date = () => {
+  const timezoneOffset = new Date().getTimezoneOffset();
+  const east8Offset = 8 * 60;
+  const offset = timezoneOffset + east8Offset;
+  const east8Date = new Date(Date.now() + offset * 60 * 1000);
+  return east8Date;
+};
 
 export default (inPkg?): string[] => {
   const pkg = inPkg || require(path.join(process.cwd(), './package.json'));
@@ -10,7 +17,7 @@ export default (inPkg?): string[] => {
     { key: 'description' },
     { key: 'homepage' },
     { key: 'version' },
-    { key: 'date', value: dateformat(null, DEFAULT_FORMAT) },
+    { key: 'date', value: dateformat(getEast8Date(), DEFAULT_FORMAT) },
     { key: 'license' },
   ];
 
