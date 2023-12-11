@@ -6,17 +6,17 @@ const getEast8Date = () => {
   const timezoneOffset = new Date().getTimezoneOffset();
   const east8Offset = 8 * 60;
   const offset = timezoneOffset + east8Offset;
-  const east8Date = new Date(Date.now() + offset * 60 * 1000);
-  return east8Date;
+  return new Date(Date.now() + offset * 60 * 1000);
 };
 
 export default (inPkg?): string[] => {
   const pkg = inPkg || require(path.join(process.cwd(), './package.json'));
+  const version = pkg.gtcVersion || pkg.version;
   const pairs = [
     { key: 'name' },
     { key: 'description' },
     { key: 'homepage' },
-    { key: 'version' },
+    { key: 'version', value: version },
     { key: 'date', value: dateformat(getEast8Date(), DEFAULT_FORMAT) },
     { key: 'license' },
   ];
