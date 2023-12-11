@@ -9,8 +9,9 @@ const getEast8Date = () => {
   return new Date(Date.now() + offset * 60 * 1000);
 };
 
-export default (inPkg?): string[] => {
-  const pkg = inPkg || require(path.join(process.cwd(), './package.json'));
+export default (inPkg: Record<string, any>): string[] => {
+  const cwd = process.cwd();
+  const pkg = inPkg || require(path.join(cwd, './package.json'));
   const version = pkg.gtcVersion || pkg.version;
   const pairs = [
     { key: 'name' },
