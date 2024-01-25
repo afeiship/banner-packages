@@ -12,7 +12,7 @@ type RollupBannerOptions = {
 
 const defaults = { type: 'js' };
 
-const rollupBanner = (inOptions: RollupBannerOptions): string => {
+const rollupBanner = (inOptions?: RollupBannerOptions): string => {
   let { pkg, type } = { ...defaults, ...inOptions };
   if (!pkg) pkg = JSON.parse(fs.readFileSync('package.json', 'utf-8')) as JSONType;
   return nx.niceComments(bannerDefs(pkg), type);
