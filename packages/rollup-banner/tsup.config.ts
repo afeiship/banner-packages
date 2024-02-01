@@ -6,7 +6,7 @@ export default defineConfig({
   splitting: true,
   cjsInterop: true,
   // globalName: 'i18nHelper',
-  // external: ['react'],
+  external: ['@jswork/next', '@jswork/banner-defaults', '@jswork/next-nice-comments'],
   clean: true,
   dts: true,
   sourcemap: true,
