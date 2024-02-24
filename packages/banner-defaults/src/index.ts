@@ -1,13 +1,6 @@
 import path from 'path';
-import dateformat from 'dateformat';
-
-const DEFAULT_FORMAT = 'yyyy-mm-dd HH:MM:ss';
-const getEast8Date = () => {
-  const timezoneOffset = new Date().getTimezoneOffset();
-  const east8Offset = 8 * 60;
-  const offset = timezoneOffset + east8Offset;
-  return new Date(Date.now() + offset * 60 * 1000);
-};
+import sdf from '@jswork/simple-date-format';
+import es8date from '@jswork/east8date';
 
 export default (inPkg: Record<string, any>): string[] => {
   const cwd = process.cwd();
@@ -18,7 +11,7 @@ export default (inPkg: Record<string, any>): string[] => {
     { key: 'description' },
     { key: 'homepage' },
     { key: 'version', value: version },
-    { key: 'date', value: dateformat(getEast8Date(), DEFAULT_FORMAT) },
+    { key: 'date', value: sdf('datetime', es8date()) },
     { key: 'license' },
   ];
 

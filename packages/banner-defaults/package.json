@@ -1,6 +1,6 @@
 {
   "name": "@jswork/banner-defaults",
-  "version": "1.0.10",
+  "version": "1.1.0",
   "description": "Defaults for banner.",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -35,7 +35,8 @@
     "typescript": "^4.1.3"
   },
   "dependencies": {
-    "dateformat": "^3.0.3"
+    "@jswork/east8date": "^1.0.1",
+    "@jswork/simple-date-format": "^1.0.5"
   },
   "publishConfig": {
     "access": "public",
