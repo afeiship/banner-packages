@@ -36,6 +36,7 @@
   },
   "dependencies": {
     "@jswork/east8date": "^1.0.1",
+    "@jswork/read-pkg-json": "^1.0.3",
     "@jswork/simple-date-format": "^1.0.5"
   },
   "publishConfig": {
