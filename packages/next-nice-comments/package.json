@@ -2,7 +2,7 @@
   "name": "@jswork/next-nice-comments",
   "version": "1.0.8",
   "description": "Build nice comments.",
-  "homepage": "https://github.com/afeiship/next-nice-comments",
+  "homepage": "https://js.work",
   "author": {
     "name": "afei",
     "email": "1290657123@qq.com"
@@ -13,39 +13,29 @@
     "release": "release-it"
   },
   "main": "dist/index.js",
+  "module": "dist/index.esm.js",
   "license": "MIT",
   "devDependencies": {
-    "@jswork/next": "^1.0.0",
+    "@babel/core": "^7.23.9",
+    "@babel/preset-env": "^7.20.2",
+    "@jswork/gulp-registry": "^1.0.22",
+    "@jswork/next": "^1.1.8",
     "del": "^6.0.0",
-    "express": "^4.17.1",
     "gulp": "^4.0.2",
-    "gulp-debug": "^4.0.0",
-    "gulp-header": "^2.0.9",
-    "gulp-ignore": "^3.0.0",
-    "gulp-load-plugins": "^2.0.5",
+    "gulp-babel": "^8.0.0",
+    "gulp-prettier": "^4.0.0",
     "gulp-rename": "^2.0.0",
-    "gulp-size": "^3.0.0",
-    "gulp-sourcemaps": "^3.0.0",
+    "gulp-replace": "^1.1.4",
     "gulp-uglify": "^3.0.2",
-    "jest": "^26.6.3",
-    "prettier": "^2.7.1",
-    "uglify-js": "3.11.5",
-    "uglify-save-license": "^0.4.1",
-    "yargs": "^16.1.0"
+    "jest": "^29.5.0",
+    "jest-location-mock": "^1.0.9",
+    "uglify-save-license": "^0.4.1"
+  },
+  "babel": {
+    "presets": [["@babel/preset-env"]]
   },
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org"
-  },
-  "keywords": [
-    "next",
-    "comments",
-    "header",
-    "banner",
-    "js",
-    "html",
-    "css",
-    "raw"
-  ],
-  "gitHead": "4397e9ac060b735b606669c4eeac3d8bf0776264"
+  }
 }
