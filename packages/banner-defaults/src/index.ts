@@ -5,7 +5,7 @@ import readPkg from '@jswork/read-pkg-json';
 export default (inPkg?: Record<string, any>): string[] => {
   const pkg = inPkg || readPkg();
   const version = pkg.gtcVersion || pkg.version;
-  const _version = version === '0.0.0' ? undefined : version;
+  const _version = version === '0.0.0' ? null : version;
   const pairs = [
     { key: 'name' },
     { key: 'description' },
@@ -17,7 +17,7 @@ export default (inPkg?: Record<string, any>): string[] => {
 
   return pairs
     .map((item) => {
-      const value = item.value || pkg[item.key];
+      const value = item.value === null ? null : item.value || pkg[item.key];
       return value ? `${item.key}: ${value}` : '';
     })
     .filter(Boolean);
