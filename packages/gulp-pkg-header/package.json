@@ -29,7 +29,7 @@
     "registry": "https://registry.npmjs.org/"
   },
   "dependencies": {
-    "@jswork/next-nice-comments": "^1.0.11",
+    "@jswork/next-nice-comments": "^1.0.12",
     "dateformat": "^3.0.3",
     "gulp-header": "^2.0.9"
   },
