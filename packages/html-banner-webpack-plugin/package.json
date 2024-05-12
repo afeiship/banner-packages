@@ -1,6 +1,6 @@
 {
   "name": "@jswork/html-banner-webpack-plugin",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Adds a banner to the top of each generated html.",
   "main": "index.js",
   "repository": "git@github.com:afeiship/html-banner-webpack-plugin.git",
