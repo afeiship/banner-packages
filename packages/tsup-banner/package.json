@@ -25,6 +25,12 @@
     "tsup": "^8.0.1",
     "typescript": "^4.9.5"
   },
+  "peerDependencies": {
+    "@jswork/next": "^1.2.2",
+    "@jswork/banner-defaults": "^1.1.6",
+    "@jswork/next-nice-comments": "^1.0.12",
+    "@jswork/rollup-banner": "^1.0.8"
+  },
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org"
