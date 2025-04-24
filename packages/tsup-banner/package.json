@@ -1,6 +1,6 @@
 {
   "name": "@jswork/tsup-banner",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "type": "module",
   "description": "Tsup banner.",
   "main": "dist/index.cjs.js",
@@ -26,8 +26,8 @@
     "typescript": "^4.9.5"
   },
   "peerDependencies": {
-    "@jswork/next": "^1.2.2",
     "@jswork/banner-defaults": "^1.1.6",
+    "@jswork/next": "^1.2.2",
     "@jswork/next-nice-comments": "^1.0.12",
     "@jswork/rollup-banner": "^1.0.8"
   },
