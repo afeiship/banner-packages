@@ -3,14 +3,9 @@
   "version": "1.0.4",
   "type": "module",
   "description": "Tsup banner.",
-  "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.esm.js",
-      "require": "./dist/index.cjs.js"
-    },
-    "./package.json": "./package.json"
-  },
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "typings": "dist/index.d.ts",
   "scripts": {
     "build": "tsup",
     "test": "bun test",
