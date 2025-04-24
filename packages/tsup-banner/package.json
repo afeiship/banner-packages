@@ -3,8 +3,7 @@
   "version": "1.0.7",
   "type": "module",
   "description": "Tsup banner.",
-  "main": "dist/index.cjs.js",
-  "module": "dist/index.esm.js",
+  "main": "dist/index.esm.js",
   "scripts": {
     "build": "tsup",
     "test": "bun test",
