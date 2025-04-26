@@ -4,8 +4,8 @@
   "description": "Build nice comments.",
   "type": "module",
   "npmClient": "pnpm",
-  "main": "dist/index.esm.js",
-  "browser": "dist/index.umd.js",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
   "typings": "dist/index.d.ts",
   "files": [
     "src",
@@ -20,7 +20,6 @@
   "license": "MIT",
   "devDependencies": {
     "@jswork/style-guide": "^1.0.3",
-    "@jswork/tsup-banner": "^1.0.10",
     "@swc/core": "^1.5.5",
     "@types/jest": "^29.5.12",
     "@types/node": "^20.12.11",
@@ -39,5 +38,6 @@
     "nice-comments",
     "number",
     "num"
-  ]
+  ],
+  "gitHead": "c35577601f6298503e2313d1c704e91f856b04b2"
 }
