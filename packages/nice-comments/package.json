@@ -1,6 +1,6 @@
 {
   "name": "@jswork/nice-comments",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Build nice comments.",
   "type": "module",
   "npmClient": "pnpm",
@@ -20,7 +20,7 @@
   "license": "MIT",
   "devDependencies": {
     "@jswork/style-guide": "^1.0.3",
-    "@jswork/tsup-banner": "^1.0.4",
+    "@jswork/tsup-banner": "^1.0.10",
     "@swc/core": "^1.5.5",
     "@types/jest": "^29.5.12",
     "@types/node": "^20.12.11",
