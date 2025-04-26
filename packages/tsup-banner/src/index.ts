@@ -1,7 +1,6 @@
 import fs from 'fs';
 import bfd from '@jswork/banner-defaults';
-import '@jswork/next';
-import '@jswork/next-nice-comments';
+import niceComments from '@jswork/nice-comments';
 
 type BannerType = 'html' | 'css' | 'js';
 type JSONType = Record<string, any>;
@@ -15,7 +14,7 @@ const defaults = { type: 'js' };
 const tsupBanner = (inOptions?: RollupBannerOptions): string => {
   let { pkg, type } = { ...defaults, ...inOptions };
   if (!pkg) pkg = JSON.parse(fs.readFileSync('package.json', 'utf-8')) as JSONType;
-  return nx.niceComments(bfd(pkg), type);
+  return niceComments(bfd(pkg), type);
 };
 
 export default tsupBanner;
