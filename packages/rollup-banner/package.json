@@ -1,6 +1,6 @@
 {
   "name": "@jswork/rollup-banner",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "Banner for latest rollupjs.",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
@@ -26,8 +26,8 @@
     "registry": "https://registry.npmjs.org"
   },
   "dependencies": {
-    "@jswork/banner-defaults": "^1.1.8",
-    "@jswork/nice-comments": "^1.0.2"
+    "@jswork/banner-defaults": "^1.1.9",
+    "@jswork/nice-comments": "^1.0.3"
   },
   "gitHead": "c35577601f6298503e2313d1c704e91f856b04b2"
 }

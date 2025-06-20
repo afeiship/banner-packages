@@ -2,17 +2,17 @@ const DEFAULT_TYPES = {
   js: {
     start: '/*!\n',
     lineWith: ' * ',
-    end: '\n */\n\n'
+    end: '\n */\n'
   },
   css: {
     start: '/*!\n',
     lineWith: ' * ',
-    end: '\n */\n\n'
+    end: '\n */\n'
   },
   html: {
     start: '<!--\n',
     lineWith: ' * ',
-    end: '\n-->\n\n'
+    end: '\n-->\n'
   },
   raw: {
     start: '',
