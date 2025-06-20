@@ -1,6 +1,6 @@
 {
   "name": "@jswork/gulp-pkg-header",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "description": "Gulp header form package.json.",
   "homepage": "https://github.com/afeiship/gulp-pkg-header",
   "author": {
@@ -29,7 +29,7 @@
     "registry": "https://registry.npmjs.org/"
   },
   "dependencies": {
-    "@jswork/nice-comments": "^1.0.3",
+    "@jswork/nice-comments": "^1.0.4",
     "dateformat": "^3.0.3",
     "gulp-header": "^2.0.9"
   },

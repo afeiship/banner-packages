@@ -1,6 +1,6 @@
 {
   "name": "@jswork/next-rollup-banner",
-  "version": "1.0.15",
+  "version": "1.0.16",
   "description": "Rollup banner for next.",
   "homepage": "https://github.com/afeiship/next-rollup-banner",
   "author": {
@@ -16,7 +16,7 @@
   "main": "dist/index.js",
   "license": "MIT",
   "devDependencies": {
-    "@jswork/gulp-pkg-header": "^1.0.14",
+    "@jswork/gulp-pkg-header": "^1.0.15",
     "@jswork/next": "^1.0.2",
     "del": "^6.0.0",
     "gulp": "^4.0.2",

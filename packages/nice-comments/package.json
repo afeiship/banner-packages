@@ -1,6 +1,6 @@
 {
   "name": "@jswork/nice-comments",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Build nice comments.",
   "npmClient": "pnpm",
   "main": "dist/index.cjs.js",
