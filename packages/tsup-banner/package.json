@@ -4,6 +4,7 @@
   "type": "module",
   "description": "Tsup banner.",
   "main": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsup",
     "test": "bun test",
